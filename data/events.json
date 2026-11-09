@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T01:24:48.284Z",
-  "source": "Moshtix public API + curated official source links",
-  "updateStatus": "provider",
+  "updatedAt": "2026-11-09T00:00:00Z",
+  "source": "Curated Moshtix official event pages (automatic importer unverified)",
+  "updateStatus": "seed",
   "events": [
     {
       "id": "seed-le-shiv",
