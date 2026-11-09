@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-09T01:38:53.201Z",
-  "source": "Moshtix public API + curated official source links",
+  "updatedAt": "2026-11-09T01:51:09.424Z",
+  "source": "Official concert providers",
   "updateStatus": "provider",
   "events": [
     {
@@ -122,6 +122,26 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lvl-1-vinyl-night-with-special-guest-cam-undy/201435",
       "art": "art-d"
+    },
+    {
+      "id": "moshtix-202434",
+      "name": "Trivia Tuesdays // La La La's Wollongong",
+      "title": "Trivia Tuesdays // La La La's Wollongong",
+      "short": "TRIVIA TUESDAYS // LA\nLA LA'S WOLLONGONG",
+      "tour": "Trivia Tuesdays // La La La's Wollongong",
+      "city": "Wollongong",
+      "venue": "La La La's",
+      "date": "2026-11-10",
+      "time": "7:00 PM",
+      "genre": "Other",
+      "stage": "unknown",
+      "presale": null,
+      "sale": null,
+      "announced": null,
+      "detectedAt": "2026-11-09T01:51:09.424Z",
+      "source": "Moshtix",
+      "url": "https://www.moshtix.com.au/v2/event/trivia-tuesdays-la-la-la-s-wollongong/202434",
+      "art": "art-c"
     },
     {
       "id": "moshtix-199142",
@@ -858,7 +878,7 @@
       "presale": null,
       "sale": null,
       "announced": null,
-      "detectedAt": null,
+      "detectedAt": "2026-11-09T01:51:09.424Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/le-shiv-yada-yada-national-album-tour-w-warbaby-lsf-wollongong/198400",
       "art": "art-a"
@@ -1745,5 +1765,8 @@
       "url": "https://www.moshtix.com.au/v2/event/ministry-of-sound-summer-dance-festival-sydney/189312",
       "art": "art-b"
     }
+  ],
+  "sources": [
+    "Moshtix"
   ]
 }
