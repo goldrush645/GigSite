@@ -1,0 +1,27 @@
+name: Update official NSW concert listings
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 20 * * *' # once a day, 07:17 AEDT in summer
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch Moshtix public event records
+        run: node scripts/sync-events.mjs
+      - name: Commit refreshed event feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh ENCORE official NSW event feed"
+            git push
+          fi
