@@ -125,6 +125,38 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
 .festival-detail-link{background:#fff!important;font-size:11px!important}
 @media(max-width:870px){.search-combo{width:245px}}
 @media(max-width:570px){.search-combo{flex:1;width:auto;min-width:0}.search-combo>.search{max-width:none}.search-suggestions{left:0;right:auto;width:calc(100vw - 32px);max-height:55dvh}.search input{font-size:12px}.festival-follow-card{flex-wrap:wrap}.festival-follow-card .artist-copy{min-width:100px}}
+
+/* ENCORE POSTER PHOTOS V8 */
+.poster-photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 38%;z-index:0;filter:contrast(1.1) saturate(.85) brightness(.92);transition:transform .45s cubic-bezier(.2,.75,.2,1),filter .3s ease;pointer-events:none}
+.poster-photo-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(14,13,31,.40) 0%,rgba(24,16,39,.07) 27%,rgba(24,13,33,.23) 51%,rgba(14,10,29,.92) 100%),linear-gradient(125deg,rgba(255,112,86,.28),rgba(88,67,212,.2) 67%,rgba(14,18,35,.04))}
+.has-poster-photo{background:#423c61}
+.event-art.has-poster-photo:before,.festival-art.has-poster-photo:before{z-index:1;border-color:#ffffff20;pointer-events:none}
+.event-art.has-poster-photo:after{content:"ENCORE // LIVE";z-index:2;right:-26px;bottom:auto;top:91px;font-family:var(--body);font-size:9px;letter-spacing:3px;font-weight:1000;color:#ffffffbb;transform:rotate(90deg);pointer-events:none}
+.festival-art.has-poster-photo:after{content:"✳";z-index:2;font-size:110px;opacity:.20;pointer-events:none}
+.event-art.has-poster-photo .art-top,.event-art.has-poster-photo .art-bottom{position:relative;z-index:3}
+.event-art.has-poster-photo .art-name{text-shadow:1px 4px 0 #1d142d60,0 0 22px #1a142c80;letter-spacing:-1px}
+.festival-art.has-poster-photo>small,.festival-art.has-poster-photo>strong,.drawer-art.has-poster-photo>strong{position:relative;z-index:3;text-shadow:0 3px 12px #151022b5}
+.event-card:hover .event-art.has-poster-photo .poster-photo,.festival-card:hover .festival-art.has-poster-photo .poster-photo{transform:scale(1.045);filter:contrast(1.12) saturate(.98) brightness(.94)}
+.event-art.has-poster-photo .tag{box-shadow:2px 2px 0 #252037a8}
+.event-art.has-poster-photo .art-date{display:inline-block;background:#ffdc87;color:#1a2936;padding:4px 7px;letter-spacing:1.4px;transform:rotate(-2deg);font-size:10px;border:1px solid #201b31}
+.drawer-art.has-poster-photo{background:#33324b;isolation:isolate}
+.drawer-art.has-poster-photo .poster-photo-scrim{background:linear-gradient(180deg,rgba(24,15,40,.05),rgba(16,13,35,.82)),linear-gradient(120deg,#ef7e6d38,#6b3f9a4a)}
+.photo-credit{font-size:10px;line-height:1.45;color:#776d7d;margin:12px 0 0;overflow-wrap:anywhere}
+.artist-avatar.poster-thumb{width:67px;height:79px;flex:0 0 67px;position:relative;background:linear-gradient(140deg,#ffad6a,#b778e5);border:2px solid #24303c;border-radius:3px;overflow:hidden;transform:rotate(-2deg);box-shadow:3px 4px 0 #c5b7c8}
+.artist:nth-child(3n+2) .artist-avatar.poster-thumb{transform:rotate(2deg)}
+.artist-avatar.poster-thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:contrast(1.1) saturate(.84)}
+.artist-avatar.poster-thumb:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#fd905a38,transparent 54%,#573c9d33)}
+.artist.poster-artist{border-color:#29273b;box-shadow:3px 4px 0 #e1d7de;background:#fffbf4}
+.suggest-art{width:45px;height:51px;flex:0 0 45px;display:grid;place-items:center;background:linear-gradient(140deg,#ed7f68,#7c6dcc);border:1px solid #263544;box-shadow:2px 2px 0 #c8b8ca;border-radius:2px;overflow:hidden;transform:rotate(-2deg);font-family:var(--display);font-size:22px;color:#fff}
+.suggest-art img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.suggest-copy{display:flex;flex-direction:column;flex:1;gap:3px;min-width:0}
+.suggest-item{display:flex;align-items:center;gap:11px;text-align:left}
+.suggest-item .suggest-name,.suggest-item .suggest-meta{display:block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.suggest-item .suggest-name{font-weight:900}
+.suggest-item .suggest-meta{font-size:10px}
+@media(max-width:570px){.carousel-track .event-art.has-poster-photo .art-name{font-size:clamp(32px,11vw,49px)}.event-art.has-poster-photo:after{top:85px}.artist-avatar.poster-thumb{width:58px;height:69px;flex-basis:58px}.suggest-art{width:40px;height:45px;flex-basis:40px}}
+@media(prefers-reduced-motion:reduce){.poster-photo{transition:none}.event-card:hover .poster-photo,.festival-card:hover .poster-photo{transform:none}}
+
 </style>
 </head>
 <body>
@@ -134,6 +166,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
 const icons={heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',search:'<circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/>',pin:'<path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5z"/>',music:'<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',close:'<path d="M18 6 6 18M6 6l12 12"/>',ticket:'<path d="M2 9V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a3 3 0 0 0 0 6v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a3 3 0 0 0 0-6Z"/>',sparkle:'<path d="m12 3 2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/>'};
 const icon=x=>`<svg aria-hidden="true" viewBox="0 0 24 24">${icons[x]||icons.music}</svg>`;
 const artists=[];
+const artistImageIndex=new Map();
 const events=[];
 const festivals=[];
 let dataStatus='Loading verified events…';
@@ -234,6 +267,14 @@ function eventDetail(e){const artist=artistForEvent(e),on=artist&&state.followin
 function festivalDetail(f){const matches=(f.lineup||[]).filter(a=>state.following.has(a)),on=state.festivals.has(f.id),link=verifiedUrl(f.url);return `<div class="drawer-art ${f.art}"><strong>${escapeHtml(f.short||f.name).replace(/\n/g,'<br>')}</strong></div><div class="drawer-content"><div class="kick">OFFICIAL FESTIVAL LISTING · ${escapeHtml(f.source||'Event provider')}</div><h2 class="detail-title">${escapeHtml(f.name)}</h2><div class="detail-row">${icon('calendar')}${date(f.date)}${f.date!==f.date2?' – '+date(f.date2):''}</div><div class="detail-row">${icon('pin')}${escapeHtml(f.venue)}, ${escapeHtml(f.city)}, NSW</div><div class="divider"></div><h3 class="detail-heading">PUBLISHED LINEUP</h3><p class="detail-sub" style="line-height:2.2">${(f.lineup||[]).length?f.lineup.map(a=>state.following.has(a)?`<strong style="color:#16697c">${escapeHtml(a)}</strong>`:escapeHtml(a)).join(' · '):'See the official event page for the lineup.'}</p>${(f.lineup||[]).length?`<div class="match">${matches.length} followed artist${matches.length===1?'':'s'} in this lineup</div>`:''}<div class="detail-actions"><button type="button" class="primary-btn" data-festival="${escapeHtml(f.id)}">${on?'Following festival ✓':'+ Follow festival'}</button>${link?`<a class="secondary-btn" href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">Official tickets ↗</a>`:''}</div><p class="detail-note">Lineups can change. Following a festival is stored locally; lineup alerts are not operational yet.</p></div>`}
 function detail(){if(!state.detail)return '';const e=events.find(x=>x.id===state.detail),f=festivals.find(x=>x.id===state.detail);if(!e&&!f)return '';return `<div class="shade" id="shade"><section class="drawer" role="dialog" aria-modal="true" aria-label="${e?'Concert':'Festival'} details"><div class="drawer-head"><span>EVENT DETAILS / ENCORE</span><button type="button" class="icon-btn" data-close aria-label="Close event details">${icon('close')}</button></div>${e?eventDetail(e):festivalDetail(f)}</section></div>`}
 function verifiedUrl(url){try{const u=new URL(String(url));return u.protocol==='https:'&&['www.moshtix.com.au','moshtix.com.au','www.ticketmaster.com.au','ticketmaster.com.au','www.ticketmaster.com','ticketmaster.com'].includes(u.hostname)?u.href:null}catch(e){return null}}
+
+function verifiedPhotoUrl(url){try{const u=new URL(String(url||''));if(u.protocol!=='https:'||u.username||u.password)return null;const h=u.hostname.toLowerCase();if(!['ticketm.net','ticketmaster.com','ticketmaster.com.au'].some(d=>h===d||h.endsWith('.'+d)))return null;if(!/\.(?:png|webp|jpe?g)$/i.test(u.pathname))return null;return u.href}catch(e){return null}}
+function photoForArtist(name){return name?artistImageIndex.get(normSearch(name))||null:null}
+function photoForEvent(e){const first=verifiedPhotoUrl(e.artistImage);if(first)return{url:first,credit:e.artistImageCredit||null};const shared=photoForArtist(artistForEvent(e));if(shared)return shared;const fallback=verifiedPhotoUrl(e.eventImage);return fallback?{url:fallback,credit:e.eventImageCredit||null}:null}
+function photoForFestival(f){const url=verifiedPhotoUrl(f.eventImage);return url?{url,credit:f.eventImageCredit||null}:null}
+function posterPhotoMarkup(photo){return photo?'<img class="poster-photo" src="'+escapeHtml(photo.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="poster-photo-scrim" aria-hidden="true"></span>':''}
+function thumbPhotoMarkup(photo,label){return photo?'<img src="'+escapeHtml(photo.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':escapeHtml(label||'?')}
+function suggestionPhoto(item){if(item.type==='artist')return photoForArtist(item.id);if(item.type==='event'){const e=events.find(x=>x.id===item.id);return e?photoForEvent(e):null}if(item.type==='festival'){const f=festivals.find(x=>x.id===item.id);return f?photoForFestival(f):null}return null}
 function escapeHtml(str){return String(str).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;')}
 function render(opts={}){const carousels={};document.querySelectorAll('.carousel-track').forEach(el=>carousels[el.id]=el.scrollLeft);root.innerHTML=`<div class="app">${header()}<main class="content"><div class="demo">${icon('sparkle')}<span>${escapeHtml(dataStatus)} Events link to official providers. Announcement times, availability and notifications are not live.</span></div><div id="page-content">${state.page==='discover'?discover():followingPage()}</div><footer class="footer"><span>ENCORE / Concert discovery</span><span><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms &amp; Conditions</a><span>Prototype V6 · Real listings</span></span></footer></main>${mobileNav()}${detail()}</div>`;document.body.style.overflow=state.detail?'hidden':'';Object.entries(carousels).forEach(([id,left])=>{const el=document.getElementById(id);if(el)el.scrollLeft=left});if(opts.focus){const el=document.getElementById('search');el?.focus();try{el?.setSelectionRange(opts.pos,opts.pos)}catch(e){}}}
 function changePage(page){state.page=page;state.query='';state.detail=null;render();window.scrollTo({top:0,behavior:'instant'})}
