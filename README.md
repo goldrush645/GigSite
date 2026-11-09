@@ -3,7 +3,7 @@
 Website: https://goldrush645.github.io/GigSite/
 
 ## Current functionality
-- 16 real concerts and two festivals seeded from individually verified official Moshtix event pages (9 November 2026).
+- The live feed currently includes 85 concerts and two festivals, comprising 16 curated concert listings and 69 new concerts imported from Moshtix on 9 November 2026. Totals change with daily refreshes.
 - Real artists, venues, dates and official seller event links. The city selector, search, genre filtering, artist following, carousels and festival matching still work.
 - `data/events.json` is the public feed. `data/seed.json` is the curated fallback.
 - Following and reminder preferences are saved only in browser storage. No accounts or email alerts exist yet.
@@ -11,9 +11,9 @@ Website: https://goldrush645.github.io/GigSite/
 ## Real-data refresh
 A once-daily GitHub Actions workflow (`.github/workflows/sync-events.yml`) calls `scripts/sync-events.mjs`, using Moshtix's documented anonymous GraphQL interface. It requests a limited number of sorted pages, maps supported Sydney/Wollongong/Newcastle localities, and merges matches with the verified baseline while deduplicating by Moshtix ID. The refreshed `data/events.json` is committed to the repository.
 
-**Important:** The importer has not yet been confirmed against the live API in GitHub Actions. If Moshtix responds with an error or the network call fails, the script exits unsuccessfully and leaves the existing feed unchanged.
+**Status:** The live importer has been tested successfully in GitHub Actions. The API's chronological query initially returned events from 1999–2004; adding `includePastEvents: false` resolved that problem. The importer now checks that upcoming listings match our supported NSW locations. If the API returns no local matches or fails, the script exits without overwriting the existing feed. URLs are constructed with clean slugs and Moshtix event IDs.
 
-To try the first live update: GitHub → Actions → **Update official NSW concert listings** → **Run workflow** → `main`. Open the run logs and verify the count of imported events. Repository workflow permissions must allow `contents: write` for the automatic commit.
+To run an extra refresh: GitHub → Actions → **Update official NSW concert listings** → **Run workflow** → `main`. Do not use **Re-run jobs** on an old run: it checks out the original commit rather than the latest code. Repository workflow permissions must allow `contents: write` for the automatic commit.
 
 Moshtix documentation and usage terms:
 - https://developer.moshtix.com/docs/our-api/
@@ -29,4 +29,4 @@ Moshtix discourages excessive polling. This non-commercial prototype uses a cons
 - This is a static site hosted on GitHub Pages. It does not expose paid provider API keys; a future Ticketmaster integration should keep its credential in a server-side GitHub Actions secret or backend.
 - Data sources do not yet cover all Australian ticket sellers or smaller venues.
 
-Next steps: verify workflow logs and real event accuracy, expand venue/locality coverage, and add a licensed Ticketmaster feed before building announcement alerts.
+Next steps: verify individual event accuracy and venue classifications, expand venue/locality coverage, and add a licensed Ticketmaster feed before building announcement alerts.
