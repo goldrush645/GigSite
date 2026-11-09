@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T01:52:11.190Z",
+  "updatedAt": "2026-11-09T02:16:44.642Z",
   "source": "Official concert providers",
   "updateStatus": "provider",
   "events": [
@@ -21,13 +21,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/the-jack-earle-big-band/200693",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "The Jack Earle Big Band"
     },
     {
       "id": "moshtix-202431",
-      "name": "Lvl 1",
+      "name": "Lvl 1 - Capsule45 - Striclty Vinyl - Purely Analog",
       "title": "Lvl 1 - Capsule45 - Striclty Vinyl - Purely Analog",
-      "short": "LVL 1",
+      "short": "LVL 1 - CAPSULE45 -\nSTRICLTY VINYL - PURELY ANALOG",
       "tour": "Soul, funk, jazz, R&B, new wave, Latin, world music",
       "city": "Sydney",
       "venue": "Lazybones Lounge Restaurant & Bar",
@@ -41,7 +42,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lvl-1-capsule45-striclty-vinyl-purely-analog/202431",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": null
     },
     {
       "id": "moshtix-199330",
@@ -61,7 +63,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/the-edge-band-live-in-wollongong/199330",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "The Edge Band"
     },
     {
       "id": "moshtix-199784",
@@ -81,7 +84,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/the-spare-keys/199784",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "The Spare Keys"
     },
     {
       "id": "moshtix-201743",
@@ -101,7 +105,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/dulwich-high-school-of-visual-arts-design-presents-ensembles-night/201743",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": null
     },
     {
       "id": "moshtix-201435",
@@ -121,7 +126,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lvl-1-vinyl-night-with-special-guest-cam-undy/201435",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": null
     },
     {
       "id": "moshtix-202434",
@@ -141,7 +147,8 @@
       "detectedAt": "2026-11-09T01:51:09.424Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/trivia-tuesdays-la-la-la-s-wollongong/202434",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "tm-1AKZkfyGkd4OXhz",
@@ -207,13 +214,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ben-morgan/199142",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Ben Morgan"
     },
     {
       "id": "moshtix-201100",
-      "name": "Congette + The Low Dogs + The Money",
+      "name": "Congette",
       "title": "Congette + The Low Dogs + The Money",
-      "short": "CONGETTE + THE LOW\nDOGS + THE MONEY",
+      "short": "CONGETTE",
       "tour": "Alternative Indie",
       "city": "Sydney",
       "venue": "Lazybones Lounge Restaurant & Bar",
@@ -227,7 +235,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/congette-the-low-dogs-the-money/201100",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Congette"
     },
     {
       "id": "moshtix-201512",
@@ -247,7 +256,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/charles-carnabuci-babyteeth-album-launch/201512",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Charles Carnabuci"
     },
     {
       "id": "moshtix-201744",
@@ -267,13 +277,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/vinyl-night-with-special-guest-robbie-buck-on-level-1/201744",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": null
     },
     {
       "id": "moshtix-202002",
-      "name": "METRO A.i.R X FINND: DŒGAEGÉ + MORE",
+      "name": "METRO A.i.R X FINND: DŒGAEGÉ",
       "title": "METRO A.i.R X FINND: DŒGAEGÉ + MORE",
-      "short": "METRO A.I.R X FINND:\nDŒGAEGÉ + MORE",
+      "short": "METRO A.I.R X\nFINND: DŒGAEGÉ",
       "tour": "METRO A.i.R X FINND: DŒGAEGÉ + MORE",
       "city": "Sydney",
       "venue": "Metro Social",
@@ -287,7 +298,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/metro-a-i-r-x-finnd-d-gaeg-more/202002",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "METRO A.i.R X FINND: DŒGAEGÉ"
     },
     {
       "id": "moshtix-197714",
@@ -307,7 +319,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/dirty-fences-nyc-australian-tour-w-raised-as-wolves-dollhouse/197714",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Dirty Fences (NYC)"
     },
     {
       "id": "moshtix-201241",
@@ -327,7 +340,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/no-flowers-mahjong-club-6-at-heaps-normal-health-club/201241",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": null
     },
     {
       "id": "moshtix-197300",
@@ -347,7 +361,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ecca-vandal-looking-for-people-to-unfollow-album-tour-second-show-added/197300",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour"
     },
     {
       "id": "moshtix-198056",
@@ -367,7 +382,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/holly-throsby/198056",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Holly Throsby"
     },
     {
       "id": "moshtix-200191",
@@ -387,13 +403,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/s-miles-and-his-all-star-big-band-returns/200191",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "S.MILES AND HIS ALL-STAR BIG BAND RETURNS!"
     },
     {
       "id": "moshtix-200819",
-      "name": "TEENS",
+      "name": "TEENS w/ Miners",
       "title": "TEENS w/ Miners // Big Modern",
-      "short": "TEENS",
+      "short": "TEENS W/\nMINERS",
       "tour": "TEENS w/ Miners // Big Modern",
       "city": "Wollongong",
       "venue": "La La La's",
@@ -407,13 +424,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/teens-w-miners-big-modern/200819",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "TEENS w/ Miners"
     },
     {
       "id": "moshtix-201008",
-      "name": "Steel Assassins warm up show w/RAWTISM + PESTILENT DOOM + HEATHENSPAWN + SHATTERFACE",
+      "name": "Steel Assassins warm up show w/RAWTISM",
       "title": "Steel Assassins warm up show w/RAWTISM + PESTILENT DOOM + HEATHENSPAWN + SHATTERFACE",
-      "short": "STEEL ASSASSINS WARM UP SHOW W/RAWTISM +\nPESTILENT DOOM + HEATHENSPAWN + SHATTERFACE",
+      "short": "STEEL ASSASSINS WARM\nUP SHOW W/RAWTISM",
       "tour": "Official Steel Assassins 2026 warm up show.",
       "city": "Sydney",
       "venue": "MoshPit Bar",
@@ -427,13 +445,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/steel-assassins-warm-up-show-w-rawtism-pestilent-doom-heathenspawn-shatterface/201008",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Steel Assassins warm up show w/RAWTISM"
     },
     {
       "id": "moshtix-198181",
-      "name": "Katchafire 2026 Aus Tour",
+      "name": "Katchafire",
       "title": "Katchafire 2026 Aus Tour w/ Mike Love (USA)",
-      "short": "KATCHAFIRE 2026\nAUS TOUR",
+      "short": "KATCHAFIRE",
       "tour": "Katchafire 2026 Aus Tour w/ Mike Love (USA)",
       "city": "Wollongong",
       "venue": "Waves, Wollongong",
@@ -447,7 +466,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/katchafire-2026-aus-tour-w-mike-love-usa/198181",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Katchafire"
     },
     {
       "id": "moshtix-201864",
@@ -467,7 +487,29 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ivy-thursdays-12th-november/201864",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "ivy Thursdays"
+    },
+    {
+      "id": "moshtix-202443",
+      "name": "Joker Jackpot",
+      "artistName": "Joker Jackpot",
+      "title": "Joker Jackpot // La La La's Wollongong",
+      "short": "JOKER JACKPOT",
+      "tour": "Joker Jackpot // La La La's Wollongong",
+      "city": "Wollongong",
+      "venue": "La La La's",
+      "date": "2026-11-12",
+      "time": "4:00 PM",
+      "genre": "Other",
+      "stage": "unknown",
+      "presale": null,
+      "sale": null,
+      "announced": null,
+      "detectedAt": "2026-11-09T02:16:41.305Z",
+      "source": "Moshtix",
+      "url": "https://www.moshtix.com.au/v2/event/joker-jackpot-la-la-la-s-wollongong/202443",
+      "art": "art-d"
     },
     {
       "id": "moshtix-195538",
@@ -487,7 +529,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/steel-assassins-2026-two-day-pass/195538",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "moshtix-195544",
@@ -507,7 +550,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/steel-assassins-2026-day-1/195544",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Steel Assassins 2026 Day 1"
     },
     {
       "id": "moshtix-201530",
@@ -527,7 +571,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/l-a-r-m-ant-life-album-and-vinyl-launch/201530",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "moshtix-201870",
@@ -547,13 +592,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/marly-fridays-nov-13th/201870",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "MARLY FRIDAYS"
     },
     {
       "id": "moshtix-195987",
-      "name": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour",
+      "name": "Ecca Vandal",
       "title": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour",
-      "short": "ECCA VANDAL ‘LOOKING FOR PEOPLE\nTO UNFOLLOW’ ALBUM TOUR",
+      "short": "ECCA VANDAL",
       "tour": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour",
       "city": "Sydney",
       "venue": "Oxford Art Factory, Main Room",
@@ -567,7 +613,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ecca-vandal-looking-for-people-to-unfollow-album-tour/195987",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Ecca Vandal"
     },
     {
       "id": "moshtix-199243",
@@ -587,13 +634,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ella-thompson/199243",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Ella Thompson"
     },
     {
       "id": "moshtix-199368",
-      "name": "THE TULLAMARINES 2026 TOUR",
+      "name": "THE TULLAMARINES",
       "title": "THE TULLAMARINES 2026 TOUR",
-      "short": "THE TULLAMARINES\n2026 TOUR",
+      "short": "THE TULLAMARINES",
       "tour": "THE TULLAMARINES 2026 TOUR",
       "city": "Sydney",
       "venue": "The Lansdowne Hotel, Sydney",
@@ -607,13 +655,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/the-tullamarines-2026-tour/199368",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "THE TULLAMARINES"
     },
     {
       "id": "moshtix-199802",
-      "name": "Tipsy Rodeo: The Ultimate Nashville Experience",
+      "name": "Tipsy Rodeo: The Ultimate Nashville Experience – Wollongong",
       "title": "Tipsy Rodeo: The Ultimate Nashville Experience – Wollongong",
-      "short": "TIPSY RODEO: THE\nULTIMATE NASHVILLE EXPERIENCE",
+      "short": "TIPSY RODEO: THE ULTIMATE\nNASHVILLE EXPERIENCE – WOLLONGONG",
       "tour": "Tipsy Rodeo: The Ultimate Nashville Experience – Wollongong",
       "city": "Wollongong",
       "venue": "University of Wollongong",
@@ -627,13 +676,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/tipsy-rodeo-the-ultimate-nashville-experience-wollongong/199802",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "moshtix-200139",
-      "name": "CURRENTS",
+      "name": "CURRENTS W/ Charlie Farmer",
       "title": "CURRENTS W/ Charlie Farmer // Glass Media // Ban Solo // 2b",
-      "short": "CURRENTS",
+      "short": "CURRENTS W/\nCHARLIE FARMER",
       "tour": "CURRENTS W/ Charlie Farmer // Glass Media // Ban Solo // 2b",
       "city": "Wollongong",
       "venue": "Towradgi Beach Hotel",
@@ -647,7 +697,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/currents-w-charlie-farmer-glass-media-ban-solo-2b/200139",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "CURRENTS W/ Charlie Farmer"
     },
     {
       "id": "moshtix-200245",
@@ -667,13 +718,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/cuban-social-club/200245",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "CUBAN SOCIAL CLUB"
     },
     {
       "id": "moshtix-200697",
-      "name": "FLOW KOBRA BOOTLEGGERS",
+      "name": "FLOW KOBRA BOOTLEGGERS W/ ALL REGARDS, AKIRA SLIDE & FACE THE MARTYR",
       "title": "FLOW KOBRA BOOTLEGGERS W/ ALL REGARDS, AKIRA SLIDE & FACE THE MARTYR",
-      "short": "FLOW KOBRA\nBOOTLEGGERS",
+      "short": "FLOW KOBRA BOOTLEGGERS W/ ALL REGARDS,\nAKIRA SLIDE & FACE THE MARTYR",
       "tour": "FLOW KOBRA BOOTLEGGERS W/ ALL REGARDS, AKIRA SLIDE & FACE THE MARTYR",
       "city": "Sydney",
       "venue": "Bootleggers",
@@ -687,7 +739,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/flow-kobra-bootleggers-w-all-regards-akira-slide-face-the-martyr/200697",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": null
     },
     {
       "id": "moshtix-193973",
@@ -707,7 +760,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/the-reverend-horton-heat-australian-tour-2026/193973",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "THE REVEREND HORTON HEAT"
     },
     {
       "id": "moshtix-197886",
@@ -727,7 +781,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/daine-the-in-endless-awe-agony-tour-18/197886",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "daine"
     },
     {
       "id": "moshtix-198652",
@@ -747,7 +802,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/daine/198652",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "DAINE"
     },
     {
       "id": "moshtix-201827",
@@ -767,7 +823,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/good-music-fridays/201827",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Good Music Fridays"
     },
     {
       "id": "moshtix-196232",
@@ -787,13 +844,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/drag-race-down-south-season-4-round-5-the-finale/196232",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Drag Race Down South"
     },
     {
       "id": "moshtix-196779",
-      "name": "Sasa Matic Live with Full Band",
+      "name": "Sasa Matic",
       "title": "Sasa Matic Live with Full Band",
-      "short": "SASA MATIC LIVE\nWITH FULL BAND",
+      "short": "SASA MATIC",
       "tour": "DOORS 8:00PM",
       "city": "Sydney",
       "venue": "Liberty Hall",
@@ -807,7 +865,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/sasa-matic-live-with-full-band/196779",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Sasa Matic"
     },
     {
       "id": "moshtix-201400",
@@ -827,13 +886,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/telopia-rocks-tooproud-double-single-launch-free-entry/201400",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Telopia"
     },
     {
       "id": "moshtix-201519",
-      "name": "AFTER DARK",
+      "name": "AFTER DARK W/ HOUSE OF STRANGERS",
       "title": "AFTER DARK W/ HOUSE OF STRANGERS + EVA AND AVAIKI + ALINA GRACE",
-      "short": "AFTER DARK",
+      "short": "AFTER DARK W/\nHOUSE OF STRANGERS",
       "tour": "AFTER DARK W/ HOUSE OF STRANGERS + EVA AND AVAIKI + ALINA GRACE",
       "city": "Sydney",
       "venue": "The Lansdowne Hotel, Sydney",
@@ -847,7 +907,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/after-dark-w-house-of-strangers-eva-and-avaiki-alina-grace/201519",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "AFTER DARK W/ HOUSE OF STRANGERS"
     },
     {
       "id": "moshtix-201930",
@@ -867,13 +928,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/beresford-fridays/201930",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Beresford Fridays"
     },
     {
       "id": "moshtix-201911",
-      "name": "Chinese Laundry Invites MiNNA (UK) [ALL NIGHT LONG] + BNX & FRIENDS TAKEOVER",
+      "name": "MiNNA",
       "title": "Chinese Laundry Invites MiNNA (UK) [ALL NIGHT LONG] + BNX & FRIENDS TAKEOVER",
-      "short": "CHINESE LAUNDRY INVITES MINNA (UK) [ALL NIGHT\nLONG] + BNX & FRIENDS TAKEOVER",
+      "short": "MINNA",
       "tour": "Chinese Laundry Invites MiNNA (UK) [ALL NIGHT LONG] + BNX & FRIENDS TAKEOVER",
       "city": "Sydney",
       "venue": "Chinese Laundry",
@@ -887,7 +949,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/chinese-laundry-invites-minna-uk-all-night-long-bnx-friends-takeover/201911",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "MiNNA"
     },
     {
       "id": "moshtix-201728",
@@ -907,7 +970,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/fri-13-nov-wao-superclub-ivy/201728",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "FRI 13 NOV"
     },
     {
       "id": "tm-1AvGZ_dGkw4TV72",
@@ -973,7 +1037,8 @@
       "detectedAt": "2026-11-09T01:51:09.424Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/le-shiv-yada-yada-national-album-tour-w-warbaby-lsf-wollongong/198400",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Le Shiv"
     },
     {
       "id": "moshtix-195545",
@@ -993,13 +1058,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/steel-assassins-2026-day-2/195545",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Steel Assassins 2026 Day 2"
     },
     {
       "id": "moshtix-200920",
-      "name": "Sandbox presents Kuko",
+      "name": "Kuko",
       "title": "Sandbox presents Kuko",
-      "short": "SANDBOX PRESENTS\nKUKO",
+      "short": "KUKO",
       "tour": "SANDBOX PRESENTS KUKO",
       "city": "Sydney",
       "venue": "ivy",
@@ -1013,7 +1079,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/sandbox-presents-kuko/200920",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Kuko"
     },
     {
       "id": "moshtix-201672",
@@ -1033,7 +1100,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/for-the-cause-vol002/201672",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "For The Cause VOL002"
     },
     {
       "id": "moshtix-198643",
@@ -1053,7 +1121,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/daine-the-in-endless-awe-agony-tour-all-ages/198643",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "daine"
     },
     {
       "id": "moshtix-194179",
@@ -1073,7 +1142,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/mx-burlesque-nsw-2026-competition/194179",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": null
     },
     {
       "id": "moshtix-199985",
@@ -1093,7 +1163,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/good-music-house-party/199985",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Good Music House Party"
     },
     {
       "id": "moshtix-200816",
@@ -1113,7 +1184,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/shaktoora-blue-white-edition/200816",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "SHAKTOORA"
     },
     {
       "id": "moshtix-195338",
@@ -1133,13 +1205,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/boogie-affair/195338",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "BOOGIE AFFAIR"
     },
     {
       "id": "moshtix-196511",
-      "name": "All India Radio + USER",
+      "name": "All India Radio",
       "title": "All India Radio + USER",
-      "short": "ALL INDIA RADIO\n+ USER",
+      "short": "ALL INDIA\nRADIO",
       "tour": "All India Radio + USER",
       "city": "Sydney",
       "venue": "The Vanguard",
@@ -1153,7 +1226,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/all-india-radio-user/196511",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "All India Radio"
     },
     {
       "id": "moshtix-200850",
@@ -1173,7 +1247,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/nana-s-pie-till-the-morning-tour/200850",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "moshtix-200998",
@@ -1193,7 +1268,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/park-rd-boyhood-tour/200998",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "PARK RD"
     },
     {
       "id": "moshtix-201401",
@@ -1213,13 +1289,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lapis-spots-and-stripes-single-launch-ft-leo-abisaab-free-entry/201401",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "LAPIS"
     },
     {
       "id": "moshtix-197770",
-      "name": "DICEY'S SATURDAYS",
+      "name": "DICEY'S SATURDAYS w/ Destruction of the Healer",
       "title": "DICEY'S SATURDAYS w/ Destruction of the Healer // Ashpit // Deathfeeder // Rodenticide",
-      "short": "DICEY'S SATURDAYS",
+      "short": "DICEY'S SATURDAYS W/ DESTRUCTION\nOF THE HEALER",
       "tour": "DICEY'S SATURDAYS w/ Destruction of the Healer // Ashpit // Deathfeeder // Rodenticide",
       "city": "Wollongong",
       "venue": "Dicey Riley's",
@@ -1233,7 +1310,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/dicey-s-saturdays-w-destruction-of-the-healer-ashpit-deathfeeder-rodenticide/197770",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "DICEY'S SATURDAYS w/ Destruction of the Healer"
     },
     {
       "id": "moshtix-199632",
@@ -1253,7 +1331,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/qurio-sa-dilim/199632",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "QURIO: SA DILIM"
     },
     {
       "id": "moshtix-200968",
@@ -1273,13 +1352,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/saltatio-opening-party/200968",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Saltatio opening party"
     },
     {
       "id": "moshtix-201912",
-      "name": "Chinese Laundry Invites DJANGO [NL] + CASUAL P & FRIENDS FT. C100",
+      "name": "DJANGO",
       "title": "Chinese Laundry Invites DJANGO [NL] + CASUAL P & FRIENDS FT. C100",
-      "short": "CHINESE LAUNDRY INVITES DJANGO [NL] +\nCASUAL P & FRIENDS FT. C100",
+      "short": "DJANGO",
       "tour": "Chinese Laundry Invites DJANGO [NL] + CASUAL P & FRIENDS FT. C100",
       "city": "Sydney",
       "venue": "Chinese Laundry",
@@ -1293,7 +1373,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/chinese-laundry-invites-django-nl-casual-p-friends-ft-c100/201912",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "DJANGO"
     },
     {
       "id": "moshtix-198750",
@@ -1313,13 +1394,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/above-nov-14-ft-gudfella/198750",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Above"
     },
     {
       "id": "moshtix-200439",
-      "name": "DIGI: Hyperpop, Digicore, Cloud Rap Club Night",
+      "name": "DIGI: Hyperpop, Digicore, Cloud Rap Club Night - Sydney",
       "title": "DIGI: Hyperpop, Digicore, Cloud Rap Club Night - Sydney",
-      "short": "DIGI: HYPERPOP, DIGICORE, CLOUD\nRAP CLUB NIGHT",
+      "short": "DIGI: HYPERPOP, DIGICORE, CLOUD RAP\nCLUB NIGHT - SYDNEY",
       "tour": "DIGI: Hyperpop, Digicore, Cloud Rap Club Night - Sydney",
       "city": "Sydney",
       "venue": "The Imperial Erskineville",
@@ -1333,7 +1415,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/digi-hyperpop-digicore-cloud-rap-club-night-sydney/200439",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": null
     },
     {
       "id": "moshtix-201565",
@@ -1353,7 +1436,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/s-a-s-h-sydney-x-saturday-14th-november/201565",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": null
     },
     {
       "id": "moshtix-201780",
@@ -1373,7 +1457,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/last-words-free-entry-dj-s-sydney-emo-night/201780",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Last Words"
     },
     {
       "id": "moshtix-201996",
@@ -1393,7 +1478,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/relikia-2000-rj-edition/201996",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "RELIKIA 2000"
     },
     {
       "id": "moshtix-202246",
@@ -1413,7 +1499,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/house-party-saturdays-14th-november/202246",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "HOUSE PARTY SATURDAYS"
     },
     {
       "id": "tm-1AKZkoSGkdQ3FwF",
@@ -1525,7 +1612,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/gilles-peterson/196010",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Gilles Peterson"
     },
     {
       "id": "moshtix-195743",
@@ -1545,7 +1633,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/rohan-windle-piano-man/195743",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Rohan Windle, Piano Man"
     },
     {
       "id": "moshtix-199615",
@@ -1565,13 +1654,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/xxxpress-2026/199615",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "XXXPRESS 2026"
     },
     {
       "id": "moshtix-201763",
-      "name": "Lvl 1",
+      "name": "Lvl 1 - MIKE LOVE (Hawaii) solo headline show",
       "title": "Lvl 1 - MIKE LOVE (Hawaii) solo headline show",
-      "short": "LVL 1",
+      "short": "LVL 1 - MIKE LOVE\n(HAWAII) SOLO HEADLINE SHOW",
       "tour": "Reggae, folk, rock, blues and soul",
       "city": "Sydney",
       "venue": "Lazybones Lounge Restaurant & Bar",
@@ -1585,13 +1675,14 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lvl-1-mike-love-hawaii-solo-headline-show/201763",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": null
     },
     {
       "id": "moshtix-199617",
-      "name": "Cry Club + Fvneral + Worm Girlz present: The Gay Agenda",
+      "name": "Cry Club",
       "title": "Cry Club + Fvneral + Worm Girlz present: The Gay Agenda",
-      "short": "CRY CLUB + FVNERAL + WORM\nGIRLZ PRESENT: THE GAY AGENDA",
+      "short": "CRY CLUB",
       "tour": "Cry Club + Fvneral + Worm Girlz present: The Gay Agenda",
       "city": "Wollongong",
       "venue": "La La La's",
@@ -1605,7 +1696,8 @@
       "detectedAt": "2026-11-09T01:37:34.439Z",
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/cry-club-fvneral-worm-girlz-present-the-gay-agenda/199617",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Cry Club"
     },
     {
       "id": "tm-1AvGZ_6GkBkbs-G",
@@ -3978,5 +4070,5 @@
     "Moshtix",
     "Ticketmaster"
   ],
-  "ticketmasterUpdatedAt": "2026-11-09T01:52:11.190Z"
+  "ticketmasterUpdatedAt": "2026-11-09T02:16:44.642Z"
 }
