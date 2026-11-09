@@ -1,4 +1,4 @@
-name: Update official NSW concert listings
+name: Refresh NSW concert listings — Moshtix and Ticketmaster
 on:
   workflow_dispatch:
   push:
@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/sync-events.yml'
       - 'scripts/sync-events.mjs'
+      - 'scripts/sync-ticketmaster.mjs'
+      - 'scripts/test-ticketmaster.mjs'
   schedule:
     - cron: '17 20 * * *' # once a day, 07:17 AEDT in summer
 permissions:
@@ -21,13 +23,19 @@ jobs:
           node-version: '22'
       - name: Fetch Moshtix public event records
         run: node scripts/sync-events.mjs
+      - name: Check Ticketmaster importer fixtures
+        run: node --test scripts/test-ticketmaster.mjs
+      - name: Fetch Ticketmaster events when API key is configured
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: node scripts/sync-ticketmaster.mjs
       - name: Commit refreshed event feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/events.json
           if ! git diff --cached --quiet; then
-            git commit -m "Refresh ENCORE official NSW event feed"
+            git commit -m "Refresh ENCORE official NSW event feed (Moshtix + Ticketmaster)"
             # Avoid rejecting updates made while the API job was running.
             # Never force-push or overwrite newer work.
             git pull --rebase origin main
