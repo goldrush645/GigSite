@@ -68,11 +68,24 @@ async function main(){
   const [seed,previous]=await Promise.all(['seed.json','events.json'].map(name=>readFile(folder+name,'utf8').then(JSON.parse)));
   const input=await fetchMoshtix();
   if(!input.length)throw Error('Zero API results; preserving existing file');
+  const dates=input.map(x=>x?.startDate).filter(Boolean).sort();
+  const counts=new Map();
+  for(const e of input){
+    const locality=String(e?.venue?.address?.locality||'(missing locality)').trim();
+    counts.set(locality,(counts.get(locality)||0)+1);
+  }
+  const common=[...counts].sort((a,b)=>b[1]-a[1]).slice(0,20);
+  console.log('API sample: '+input.length+' records; earliest='+dates[0]+'; latest='+dates.at(-1));
+  console.log('Top venue localities: '+JSON.stringify(common));
+  console.log('Sample public events: '+JSON.stringify(input.slice(0,3).map(e=>({name:e?.name,startDate:e?.startDate,locality:e?.venue?.address?.locality}))));
+
   const now=new Date().toISOString();
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Sydney',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const originals=[...seed.events,...seed.festivals,...previous.events,...previous.festivals];
   const seen=new Map(originals.map(e=>[idFromUrl(e.url),e]).filter(([id])=>id));
   const imported=input.map(x=>normalize(x,seen,now,today)).filter(Boolean);
+  console.log('Local today='+today+'; target cities= Sydney, Wollongong, Newcastle; matched='+imported.length+' of '+input.length);
+  if(!imported.length)throw Error('No upcoming matches in selected NSW localities. Feed unchanged. Review sampled dates, venue localities, API pagination and filters in the logs.');
   const merge=(baseline,additions)=>{
     const m=new Map();
     for(const e of baseline)if(e.date>=today)m.set(idFromUrl(e.url)||e.id,e);
