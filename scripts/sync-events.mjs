@@ -48,7 +48,7 @@ function normalize(raw,seen,now,today){
 async function fetchMoshtix(){
   const result=[];
   for(let page=0;page<8;page++){
-    const query='query { viewer { getEvents(pageIndex: '+page+', pageSize: 30, sortBy: STARTDATE, sortByDirection: ASC) { pageInfo { hasNextPage } items { id name teaser startDate venue { name address { locality } } genre { name } } } } }';
+    const query='query { viewer { getEvents(pageIndex: '+page+', pageSize: 30, includePastEvents: false, sortBy: STARTDATE, sortByDirection: ASC) { pageInfo { hasNextPage } items { id name teaser startDate venue { name address { locality } } genre { name } } } } }';
     const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
     let response;
     try{response=await fetch('https://api.moshtix.com/v1/graphql',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({query}),signal:controller.signal});}
