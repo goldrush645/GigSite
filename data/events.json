@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T02:16:44.642Z",
+  "updatedAt": "2026-11-09T02:17:16.826Z",
   "source": "Official concert providers",
   "updateStatus": "provider",
   "events": [
@@ -171,7 +171,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/parkway-drive-home-feature-documentary-world-sydney-10-11-2026/event/13006539D583E6F8",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Parkway Drive"
     },
     {
       "id": "tm-1AvGZ_kGkXTaIkM",
@@ -194,7 +195,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/alex-james-britpop-classical-australian-tour-sydney-10-11-2026/event/1300646FBF2681B7",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Alex James’ Britpop Classical"
     },
     {
       "id": "moshtix-199142",
@@ -994,7 +996,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/sir-el-tom-sydney-13-11-2026/event/1300643C95FF410F",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Sir El Tom"
     },
     {
       "id": "tm-177YvxG6uJwbwt2",
@@ -1017,7 +1020,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-bootleg-beatles-and-their-orchestra-thirroul-13-11-2026/event/130062D9B2632A4F",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "The Bootleg Beatles"
     },
     {
       "id": "seed-le-shiv",
@@ -1523,7 +1527,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/jack-johnson-surfilmusic-tour-australia-new-sydney-14-11-2026/event/13006473DA488C88",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Jack Johnson"
     },
     {
       "id": "tm-1AefZ_kGkM5Nzb6",
@@ -1546,7 +1551,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/robbie-williams-britpop-world-tour-sydney-olympic-park-14-11-2026/event/2500646DCB8F8607",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Robbie Williams"
     },
     {
       "id": "tm-177YvxG6uJs_xEB",
@@ -1569,7 +1575,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-bootleg-beatles-and-their-orchestra-sydney-14-11-2026/event/130062D9B16629FA",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "The Bootleg Beatles"
     },
     {
       "id": "tm-1AKZkokGkdx5_YS",
@@ -1592,7 +1599,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-animals-uk-the-house-of-thirroul-14-11-2026/event/13006446E22D9C33",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "The Animals"
     },
     {
       "id": "moshtix-196010",
@@ -1720,7 +1728,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/james-morrison-with-special-guest-mahalia-sydney-15-11-2026/event/1300647E8663184C",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "James Morrison"
     },
     {
       "id": "tm-16efZ_ArFG7tKwS",
@@ -1743,7 +1752,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/iron-maiden-run-for-your-lives-sydney-15-11-2026/event/2500645788A53CB3",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Iron Maiden"
     },
     {
       "id": "tm-1AKZk4kGkeXDI1X",
@@ -1766,7 +1776,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/men-at-work-thirroul-17-11-2026/event/13006546BEEE82BE",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Men At Work"
     },
     {
       "id": "tm-1AvGZ_kGkSGyUm7",
@@ -1789,7 +1800,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/robbie-williams-britpop-world-tour-newcastle-17-11-2026/event/1300646CCCE76B84",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Robbie Williams"
     },
     {
       "id": "tm-1AvGZ_aGkw6XeaK",
@@ -1812,7 +1824,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/hindley-street-country-club-thirroul-19-11-2026/event/1300649C87F82253",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Hindley Street Country Club"
     },
     {
       "id": "tm-1AKZkf6GkdP8ByG",
@@ -1835,7 +1848,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/kadim-al-sahir-pyrmont-20-11-2026/event/13006507E543AE4C",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Kadim Al Sahir"
     },
     {
       "id": "tm-1AvGZbzGklpa5PE",
@@ -1858,7 +1872,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/australian-eagles-show-thirroul-20-11-2026/event/1300638AD624B967",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "The Australian Eagles"
     },
     {
       "id": "tm-1AvGZ_FGkXM8pG5",
@@ -1881,7 +1896,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/jay-chou-carnival-ii-world-tour-olympic-park-21-11-2026/event/1300648FB741630B",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Jay Chou"
     },
     {
       "id": "tm-1AvGZ_8Gknx1wfh",
@@ -1904,14 +1920,15 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/kadim-al-sahir-pyrmont-21-11-2026/event/1300650AA22B251B",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Kadim Al Sahir"
     },
     {
       "id": "tm-1AKZkf6GkeToES7",
       "tmId": "1AKZkf6GkeToES7",
-      "name": "The UK Rod Stewart Show",
+      "name": "Direct From The UK",
       "title": "Direct From The UK - A Tribute To Sir Rod Stewart",
-      "short": "THE UK ROD\nSTEWART SHOW",
+      "short": "DIRECT FROM\nTHE UK",
       "tour": "Direct From The UK - A Tribute To Sir Rod Stewart",
       "city": "Wollongong",
       "venue": "Anita's Theatre",
@@ -1927,7 +1944,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/direct-from-the-uk-a-tribute-thirroul-21-11-2026/event/13006507BF467CC4",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Direct From The UK"
     },
     {
       "id": "seed-juice-webster",
@@ -1970,7 +1988,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-sweet-uk-the-final-blitz-thirroul-24-11-2026/event/1300647FD61669AF",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "The Sweet"
     },
     {
       "id": "seed-showstoppers",
@@ -2013,7 +2032,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/australian-crawl-sydney-28-11-2026/event/1300652EC32F522C",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Australian Crawl"
     },
     {
       "id": "tm-1AvGZ_8Gknxfw4A",
@@ -2036,7 +2056,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/kadim-al-sahir-pyrmont-28-11-2026/event/1300650AA2532545",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Kadim Al Sahir"
     },
     {
       "id": "tm-1AvGZ_4GklngtcW",
@@ -2059,7 +2080,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/ausify-presents-pub-choirs-ultimate-pda-sydney-29-11-2026/event/1300655AEAD69B7D",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Pub Choir"
     },
     {
       "id": "tm-177Yv0G62UTbJx2",
@@ -2082,7 +2104,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/ann-wilson-tripsitter-the-voice-of-sydney-30-11-2026/event/130064FDBF62688F",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Ann Wilson"
     },
     {
       "id": "tm-177Yv0G61pCOxfN",
@@ -2105,7 +2128,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/rise-against-sydney-01-12-2026/event/130064A58E822523",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Rise Against"
     },
     {
       "id": "seed-to-be-human",
@@ -2148,7 +2172,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/james-blake-sydney-02-12-2026/event/130064C2A4B22C87",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "James Blake"
     },
     {
       "id": "tm-1AKZk34GkdbmMhK",
@@ -2171,7 +2196,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/dmas-sydney-03-12-2026/event/13006495D8BB76D3",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "DMA'S"
     },
     {
       "id": "tm-1AvGZ_dGkDEomZ7",
@@ -2194,7 +2220,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/wolf-alice-australian-tour-2026-sydney-04-12-2026/event/1300643EE746E004",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Wolf Alice"
     },
     {
       "id": "tm-1AvGZ_KGkwEO7RX",
@@ -2217,7 +2244,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/safia-internal-10-year-anniversary-tour-thirroul-04-12-2026/event/1300653CA7804BFE",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Safia"
     },
     {
       "id": "seed-lf-system",
@@ -2300,7 +2328,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/dizzee-rascal-sydney-05-12-2026/event/130064DDA821316D",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Dizzee Rascal"
     },
     {
       "id": "tm-1AKZkfKGkdcdIrp",
@@ -2323,7 +2352,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-wallflowers-30-years-of-bringing-thirroul-05-12-2026/event/13006513ED0E8796",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "The Wallflowers"
     },
     {
       "id": "tm-177Yv0G655_-4R3",
@@ -2346,14 +2376,15 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/dylan-gossett-the-headed-out-back-sydney-06-12-2026/event/130064B2D9855BD2",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Dylan Gossett"
     },
     {
       "id": "tm-177Yv0G6CkmmEiS",
       "tmId": "177Yv0G6CkmmEiS",
-      "name": "The Rockwiz Christmas Show",
+      "name": "RocKwiz Rocks Christmas",
       "title": "RocKwiz Rocks Christmas",
-      "short": "THE ROCKWIZ\nCHRISTMAS SHOW",
+      "short": "ROCKWIZ ROCKS\nCHRISTMAS",
       "tour": "RocKwiz Rocks Christmas",
       "city": "Sydney",
       "venue": "State Theatre, Sydney",
@@ -2369,7 +2400,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/rockwiz-rocks-christmas-sydney-06-12-2026/event/130064E1AEBA7B33",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "RocKwiz Rocks Christmas"
     },
     {
       "id": "tm-1AKZkfsGkdJGtkU",
@@ -2392,7 +2424,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/suki-waterhouse-sydney-08-12-2026/event/13006531E63291B6",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Suki Waterhouse"
     },
     {
       "id": "tm-1AvGZ_AGknOBybX",
@@ -2415,7 +2448,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/guns-n-roses-world-tour-2026-newcastle-08-12-2026/event/1300645AA0EB963E",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Guns N' Roses"
     },
     {
       "id": "tm-177Yv0G61Na2DNl",
@@ -2438,7 +2472,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/spacey-jane-heading-back-down-under-sydney-10-12-2026/event/130064A8C93FB8EB",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Spacey Jane"
     },
     {
       "id": "tm-1AvGZ_6GkmlvPsa",
@@ -2461,7 +2496,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-ten-tenors-a-not-so-sydney-10-12-2026/event/1300647BAB065C49",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "The Ten Tenors"
     },
     {
       "id": "seed-club-country",
@@ -2524,7 +2560,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/spacey-jane-heading-back-down-under-sydney-11-12-2026/event/130064A8D2FDC50F",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Spacey Jane"
     },
     {
       "id": "seed-lucy-gray",
@@ -2607,7 +2644,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/harry-styles-together-together-sydney-olympic-park-12-12-2026/event/250064346C5043CE",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Harry Styles"
     },
     {
       "id": "tm-1AKZk3oGkd5eIUm",
@@ -2630,7 +2668,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-amity-affliction-sydney-12-12-2026/event/13006491CB0A8DAE",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "The Amity Affliction"
     },
     {
       "id": "seed-mowgli",
@@ -2693,7 +2732,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/harry-styles-together-together-sydney-olympic-park-13-12-2026/event/25006436C550C697",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Harry Styles"
     },
     {
       "id": "tm-1AKZko_GkeXzDNF",
@@ -2716,7 +2756,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/guns-n-roses-world-tour-2026-olympic-park-14-12-2026/event/13006459BEE3B8C8",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Guns N' Roses"
     },
     {
       "id": "seed-hard-ons",
@@ -2779,7 +2820,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/a-very-furnace-christmas-2026-thirroul-20-12-2026/event/13006541B4C4D5DB",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Furnace and the Fundamentals"
     },
     {
       "id": "tm-1AvGZ_oGkmoz-UX",
@@ -2802,7 +2844,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/mark-seymour-thirroul-23-01-2027/event/1300651B91E21DBE",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Mark Seymour"
     },
     {
       "id": "tm-177Yv0G6uUi4dfz",
@@ -2825,7 +2868,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/joe-jackson-australian-nz-tour-sydney-28-01-2027/event/130064DDAC543538",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Joe Jackson"
     },
     {
       "id": "tm-177Yv0G6uMrQ4S1",
@@ -2848,14 +2892,15 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/joe-jackson-australian-nz-tour-sydney-29-01-2027/event/130064DDDE695CCA",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Joe Jackson"
     },
     {
       "id": "tm-1ka8vPubGA5nd0o",
       "tmId": "1ka8vPubGA5nd0o",
-      "name": "Red Hot Summer Tour",
+      "name": "JIMMY BARNES",
       "title": "2027 Red Hot Summer Tour - JIMMY BARNES",
-      "short": "RED HOT\nSUMMER TOUR",
+      "short": "JIMMY BARNES",
       "tour": "2027 Red Hot Summer Tour - JIMMY BARNES",
       "city": "Newcastle",
       "venue": "Speers Point Park",
@@ -2871,7 +2916,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/2027-red-hot-summer-tour-jimmy-speers-point-30-01-2027/event/250065358BA83911",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "JIMMY BARNES"
     },
     {
       "id": "tm-177Yv0G6u2F4Jep",
@@ -2894,7 +2940,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/seventh-wonder-performs-fleetwood-mac-thirroul-05-02-2027/event/130064D3C8566096",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Seventh Wonder"
     },
     {
       "id": "tm-177Yv0G6uQmDktU",
@@ -2917,7 +2964,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/seventh-wonder-performs-fleetwood-mac-orchestrated-sydney-06-02-2027/event/130064D6AEEC6A76",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Seventh Wonder"
     },
     {
       "id": "tm-1APZkfNGketTlZf",
@@ -2940,7 +2988,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/lookout-2027-the-fray-more-speers-point-13-02-2027/event/25006523A9FEB014",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "LOOKOUT (Australia)"
     },
     {
       "id": "tm-16KZk40-7ZA8dC8d",
@@ -2963,7 +3012,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/rolling-stones-revue-thirroul-18-02-2027/event/13006564844F2DF2",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "The Rolling Stones Revue"
     },
     {
       "id": "tm-1AvGZ_3GkXCT3eN",
@@ -2986,7 +3036,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/calvin-harris-australia-tour-2027-sydney-20-02-2027/event/1300652F8EFD20A3",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Calvin Harris"
     },
     {
       "id": "tm-17a8v0G65QFKdO_",
@@ -3009,7 +3060,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bts-world-tour-arirang-in-sydney-sydney-olympic-park-20-02-2027/event/250064B6884C3819",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "BTS"
     },
     {
       "id": "tm-1AvGZ_3GkT8ZBnW",
@@ -3032,7 +3084,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/calvin-harris-australia-tour-2027-sydney-21-02-2027/event/1300652FD003AABD",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Calvin Harris"
     },
     {
       "id": "tm-17a8v0G65QFIK-s",
@@ -3055,7 +3108,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bts-world-tour-arirang-in-sydney-sydney-olympic-park-21-02-2027/event/250064B688A13871",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "BTS"
     },
     {
       "id": "tm-1AKZkfMGkdbb5z5",
@@ -3078,7 +3132,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/calvin-harris-australia-tour-2027-sydney-22-02-2027/event/13006537D860BE0B",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Calvin Harris"
     },
     {
       "id": "tm-1AKZkfMGkdbrDyF",
@@ -3101,7 +3156,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/calvin-harris-australia-tour-2027-sydney-23-02-2027/event/13006537D87BBE48",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Calvin Harris"
     },
     {
       "id": "tm-1AKZkfUGkdxPtN8",
@@ -3124,7 +3180,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/calvin-harris-australia-tour-2027-sydney-24-02-2027/event/13006536E29698D0",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Calvin Harris"
     },
     {
       "id": "tm-1AKZk4pGkdI7q5Y",
@@ -3147,7 +3204,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/monsieur-camemberts-cohen-noir-sydney-27-02-2027/event/13006556E811D2F0",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Monsieur Camembert"
     },
     {
       "id": "tm-177Yv0G6u60dkoe",
@@ -3170,7 +3228,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/sixpence-none-the-richer-thirroul-03-03-2027/event/130064D1E40C6442",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Sixpence None the Richer"
     },
     {
       "id": "tm-1aefZ_o3eZsZduv6",
@@ -3193,7 +3252,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-sydney-olympic-park-04-03-2027/event/2500651482031C06",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Bruno Mars"
     },
     {
       "id": "tm-1AefZ_oGknavvld",
@@ -3216,7 +3276,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-sydney-olympic-park-05-03-2027/event/2500651A89041AC3",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Bruno Mars"
     },
     {
       "id": "tm-1AvGZ_6Gkmumd6z",
@@ -3239,7 +3300,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/creedence-clearwater-collective-thirroul-05-03-2027/event/1300647B8DB831F8",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Creedence Clearwater Collective"
     },
     {
       "id": "tm-1AvGZ_8GkRA-Sgo",
@@ -3262,7 +3324,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/smokie-uk-greatest-hits-tour-sydney-06-03-2027/event/1300650BC5873D51",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Smokie"
     },
     {
       "id": "tm-1APZk40GketKA_b",
@@ -3285,7 +3348,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/mardi-gras-party-sydney-06-03-2027/event/25006564A94C5658",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Mardi Gras Party"
     },
     {
       "id": "tm-1AKZkfIGkdtbyuU",
@@ -3308,7 +3372,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bon-jovi-the-last-rockstar-thirroul-06-03-2027/event/13006528E9639376",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "BON JOVI THE LAST ROCKSTAR"
     },
     {
       "id": "tm-1AefZ_oGknaxvi7",
@@ -3331,7 +3396,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-sydney-olympic-park-08-03-2027/event/2500651A89881B04",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "Bruno Mars"
     },
     {
       "id": "tm-1AefZ_oGknaxoik",
@@ -3354,7 +3420,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/bruno-mars-the-romantic-tour-sydney-olympic-park-09-03-2027/event/2500651A89891B06",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Bruno Mars"
     },
     {
       "id": "tm-1AKZk4pGkem2pV-",
@@ -3377,7 +3444,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/chocolate-starfish-bat-out-of-hell-thirroul-12-03-2027/event/13006556AE3D6D21",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Chocolate Starfish"
     },
     {
       "id": "tm-177Yv0G619EUbJy",
@@ -3400,7 +3468,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-fab-four-sydney-13-03-2027/event/130064A5E7D989B9",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "The Fab Four"
     },
     {
       "id": "tm-1AvGZ_8GkREMPUg",
@@ -3423,7 +3492,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/queen-forever-greatest-hits-tour-dont-thirroul-13-03-2027/event/1300650BE7DE5DB5",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Queen Forever"
     },
     {
       "id": "tm-1AKZk4NGkeWblx7",
@@ -3446,7 +3516,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/belinda-carlisle-gday-and-goodbye-thirroul-15-03-2027/event/13006563BD62B884",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Belinda Carlisle"
     },
     {
       "id": "tm-177Yv0G623kYvb2",
@@ -3469,14 +3540,15 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/lookout-2027-wollongong-17-03-2027/event/130064F486C0160F",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "LOOKOUT (Australia)"
     },
     {
       "id": "tm-177Yv0G6G5atAQG",
       "tmId": "177Yv0G6G5atAQG",
-      "name": "The Original Wailers featuring Al Anderson",
+      "name": "The Original Wailers featuring Al Anderson (Jamaica)",
       "title": "The Original Wailers featuring Al Anderson (Jamaica)",
-      "short": "THE ORIGINAL WAILERS\nFEATURING AL ANDERSON",
+      "short": "THE ORIGINAL WAILERS FEATURING\nAL ANDERSON (JAMAICA)",
       "tour": "The Original Wailers featuring Al Anderson (Jamaica)",
       "city": "Wollongong",
       "venue": "Anita's Theatre",
@@ -3492,7 +3564,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-original-wailers-featuring-al-anderson-thirroul-18-03-2027/event/130064C2C9A4568C",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": null
     },
     {
       "id": "tm-1avGZ_KkZxoZdC6d",
@@ -3515,7 +3588,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/an-evening-with-celtic-thunder-sydney-19-03-2027/event/1300653180891D62",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Celtic Thunder"
     },
     {
       "id": "tm-1AKZkfKGkeyNArB",
@@ -3538,7 +3612,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/castaway-hilltop-hoods-more-north-wollongong-20-03-2027/event/13006513B98C57BA",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Castaway (Australia)"
     },
     {
       "id": "tm-1AKZk40GkeJBFii",
@@ -3561,7 +3636,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/ziggy-alberts-twin-flames-tour-thirroul-02-04-2027/event/13006564A6E88B2C",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Ziggy Alberts"
     },
     {
       "id": "tm-177Yv0G6Cn2uwnn",
@@ -3584,7 +3660,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/delta-goodrem-pure-world-tour-wollongong-11-04-2027/event/130064EA8F372AAA",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Delta Goodrem"
     },
     {
       "id": "tm-1AKZk44GkdamFqu",
@@ -3607,7 +3684,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-princess-proms-concert-thirroul-14-04-2027/event/13006555C9B8874D",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": null
     },
     {
       "id": "tm-1k7YvP4_GAuofhO",
@@ -3630,7 +3708,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/chocolate-starfish-bat-out-of-hell-sydney-01-05-2027/event/130065559D4546E0",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Chocolate Starfish"
     },
     {
       "id": "tm-1AKZkfgGkdLSqdl",
@@ -3653,7 +3732,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/tash-sultana-thirroul-01-05-2027/event/13006535DFCDD0EB",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Tash Sultana"
     },
     {
       "id": "tm-1AKZkf3Gkdm_6qr",
@@ -3676,7 +3756,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/micky-dolenz-60-years-of-the-sydney-14-05-2027/event/13006512EE64775E",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Micky Dolenz"
     },
     {
       "id": "tm-1AvGZ_4GkTvVWa9",
@@ -3699,7 +3780,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/kate-millerheidke-the-sirens-the-stars-thirroul-14-05-2027/event/1300655FC1D3D257",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Kate Miller-Heidke"
     },
     {
       "id": "tm-1AvGZ_8GkMuMtjf",
@@ -3722,7 +3804,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/micky-dolenz-60-years-of-the-thirroul-16-05-2027/event/1300650DCDDE9714",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Micky Dolenz"
     },
     {
       "id": "tm-1AvGZ_oGklpT6Sm",
@@ -3745,7 +3828,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/choirboys-great-australian-rock-n-roll-thirroul-05-06-2027/event/1300651AD6FC7CEE",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Choirboys"
     },
     {
       "id": "tm-1AKZkf-GkdkpId9",
@@ -3768,7 +3852,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-honey-sliders-play-harvest-thirroul-17-07-2027/event/13006521C65A80D7",
-      "art": "art-e"
+      "art": "art-e",
+      "artistName": "The Honey Sliders"
     },
     {
       "id": "tm-1AKZk40GkdlDXJp",
@@ -3791,7 +3876,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-rock-orchestra-by-candlelight-sydney-21-07-2027/event/13006564EBEFE996",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": null
     },
     {
       "id": "tm-16vGZ_4Q4G7I07X",
@@ -3814,7 +3900,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/the-rock-orchestra-by-candlelight-thirroul-22-07-2027/event/13006556A4545CFA",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": null
     },
     {
       "id": "tm-1AvGZ_oGkms0KgZ",
@@ -3837,7 +3924,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/echoes-of-pink-floyd-shine-on-thirroul-28-08-2027/event/1300651BB1913D40",
-      "art": "art-f"
+      "art": "art-f",
+      "artistName": "Echoes of Pink Floyd"
     },
     {
       "id": "tm-1AKZk46GkdQpnzU",
@@ -3860,7 +3948,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-01-10-2027/event/13006547DA5AAE36",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-1AKZk4FGkd_qB_V",
@@ -3883,7 +3972,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-02-10-2027/event/13006548D977A674",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-1AKZk4FGkd_z1h4",
@@ -3906,7 +3996,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-04-10-2027/event/13006548D9E0A6D5",
-      "art": "art-a"
+      "art": "art-a",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-1AKZk4FGkdQv1hi",
@@ -3929,7 +4020,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-06-10-2027/event/13006548DA04A6EC",
-      "art": "art-d"
+      "art": "art-d",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-1AKZk4FGkdQaBj6",
@@ -3952,7 +4044,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-08-10-2027/event/13006548DA27A707",
-      "art": "art-g"
+      "art": "art-g",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-1AvGZ_KGkD_chgw",
@@ -3975,7 +4068,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/hindley-street-country-club-thirroul-08-10-2027/event/1300653ED9B5BD72",
-      "art": "art-b"
+      "art": "art-b",
+      "artistName": "Hindley Street Country Club"
     },
     {
       "id": "tm-1AKZk4FGkdQ4QjU",
@@ -3998,7 +4092,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/powderfinger-live-2027-sydney-09-10-2027/event/13006548DA55A736",
-      "art": "art-h"
+      "art": "art-h",
+      "artistName": "Powderfinger"
     },
     {
       "id": "tm-16vGZ_oayG7zvfP",
@@ -4021,7 +4116,8 @@
       "detectedAt": "2026-11-09T01:52:08.238Z",
       "source": "Ticketmaster",
       "url": "https://www.ticketmaster.com.au/passenger-wild-love-tour-sydney-30-10-2027/event/1300651279E01525",
-      "art": "art-c"
+      "art": "art-c",
+      "artistName": "Passenger"
     }
   ],
   "festivals": [
@@ -4070,5 +4166,5 @@
     "Moshtix",
     "Ticketmaster"
   ],
-  "ticketmasterUpdatedAt": "2026-11-09T02:16:44.642Z"
+  "ticketmasterUpdatedAt": "2026-11-09T02:17:16.826Z"
 }
