@@ -8,8 +8,13 @@ on:
       - 'scripts/sync-events.mjs'
       - 'scripts/sync-ticketmaster.mjs'
       - 'scripts/test-ticketmaster.mjs'
+      - 'scripts/artist-names.mjs'
+      - 'scripts/test-artists.mjs'
   schedule:
     - cron: '17 20 * * *' # once a day, 07:17 AEDT in summer
+concurrency:
+  group: encore-event-import
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -24,7 +29,7 @@ jobs:
       - name: Fetch Moshtix public event records
         run: node scripts/sync-events.mjs
       - name: Check Ticketmaster importer fixtures
-        run: node --test scripts/test-ticketmaster.mjs
+        run: node --test scripts/test-ticketmaster.mjs scripts/test-artists.mjs
       - name: Fetch Ticketmaster events when API key is configured
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
