@@ -2,6 +2,7 @@
 // Docs: https://developer.moshtix.com/docs/our-api/
 // Do not add API keys or use browser-side polling.
 import {readFile,writeFile} from 'node:fs/promises';
+import {inferArtistName} from './artist-names.mjs';
 
 const folder='data/';
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -28,9 +29,6 @@ function localDateTime(utc){
 function slug(s){
   return clean(s).toLowerCase().replace(/[^0-9a-z\u4e00-\u9eff]+/g,'-').replace(/^-|-$/g,'');
 }
-function artistTitle(s){
-  return clean(s.split(/\s[|–—]\s|\s-\s|\s+w\/\s|\s+feat(?:uring)?\.?\s/i)[0]).slice(0,90);
-}
 function poster(s){
   const a=clean(s).toUpperCase().split(' ');
   return a.length<3?a.join(' '):a.slice(0,Math.ceil(a.length/2)).join(' ')+'\n'+a.slice(Math.ceil(a.length/2)).join(' ');
@@ -41,7 +39,9 @@ function normalize(raw,seen,now,today){
   if(!Number.isSafeInteger(id)||!title||!dt||!city||dt.date<today)return null;
   const u='https://www.moshtix.com.au/v2/event/'+slug(title)+'/'+id;
   const previous=seen.get(String(id));
-  const obj={id:'moshtix-'+id,name:artistTitle(title),title,short:poster(artistTitle(title)),tour:clean(raw.teaser)||title,city,venue:clean(raw.venue?.name)||'See event page',date:dt.date,time:dt.time,genre:genreFor(raw.genre?.name),stage:'unknown',presale:null,sale:null,announced:null,detectedAt:previous?.detectedAt??now,source:'Moshtix',url:u,art:'art-'+String.fromCharCode(97+id%8)};
+  const artistName=inferArtistName(title);
+  const displayName=artistName||title;
+  const obj={id:'moshtix-'+id,name:displayName,artistName,title,short:poster(displayName),tour:clean(raw.teaser)||title,city,venue:clean(raw.venue?.name)||'See event page',date:dt.date,time:dt.time,genre:genreFor(raw.genre?.name),stage:'unknown',presale:null,sale:null,announced:null,detectedAt:previous?.detectedAt??now,source:'Moshtix',url:u,art:'art-'+String.fromCharCode(97+id%8)};
   if(/\bfestival\b|\bfest\b|gong crawl/i.test(title))return {id:obj.id,name:title,short:poster(title),city,venue:obj.venue,date:dt.date,date2:dt.date,lineup:[],tag:'Official event',source:'Moshtix',url:u,art:obj.art,festival:true};
   return obj;
 }
