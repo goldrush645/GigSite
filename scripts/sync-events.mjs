@@ -88,17 +88,29 @@ async function main(){
   if(!imported.length)throw Error('No upcoming matches in selected NSW localities. Feed unchanged. Review sampled dates, venue localities, API pagination and filters in the logs.');
   const merge=(baseline,additions)=>{
     const m=new Map();
-    for(const e of baseline)if(e.date>=today)m.set(idFromUrl(e.url)||e.id,e);
+    // Ticketmaster IDs must never collide with Moshtix numeric URL IDs.
+    const identity=e=>e.source==='Ticketmaster'?e.id:(idFromUrl(e.url)||e.id);
+    for(const e of baseline)if(e.date>=today)m.set(identity(e),e);
     for(const e of additions){
-      const k=idFromUrl(e.url)||e.id,p=m.get(k);
-      m.set(k,p?{...e,id:p.id,detectedAt:p.detectedAt||null,lineup:p.lineup||e.lineup}:e);
+      const k=identity(e),p=m.get(k);
+      m.set(k,p?{
+        ...p,...e,id:p.id,detectedAt:p.detectedAt||e.detectedAt,
+        lineup:p.lineup||e.lineup,
+        ticketOptions:p.ticketOptions||e.ticketOptions,
+        presaleAt:p.presaleAt||e.presaleAt,
+        onSaleAt:p.onSaleAt||e.onSaleAt,
+        presale:p.presale||e.presale,
+        sale:p.sale||e.sale
+      }:e);
     }
     return [...m.values()].sort((a,b)=>a.date.localeCompare(b.date));
   };
   const events=merge([...seed.events,...previous.events],imported.filter(e=>!e.festival)).filter(e=>!/\bfestival\b|\bfest\b|gong crawl/i.test(e.title||e.name));
   const festivals=merge([...seed.festivals,...previous.festivals],imported.filter(e=>e.festival).map(({festival,...e})=>e));
   if(!events.length&&!festivals.length)throw Error('No matching NSW concerts, refusing empty overwrite');
-  await writeFile(folder+'events.json',JSON.stringify({updatedAt:now,source:'Moshtix public API + curated official source links',updateStatus:'provider',events,festivals},null,2)+'\n');
+  const sources=[...new Set([...events,...festivals].map(e=>e.source).filter(Boolean))];
+  const output={...previous,updatedAt:now,source:'Official concert providers',sources,updateStatus:'provider',events,festivals};
+  await writeFile(folder+'events.json',JSON.stringify(output,null,2)+'\n');
   console.log('Fetched '+input.length+' events. NSW matches '+imported.length+'. Published '+events.length+' concerts and '+festivals.length+' festivals.');
 }
 main().catch(e=>{console.error(e);process.exitCode=1});
