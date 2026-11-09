@@ -1,32 +1,50 @@
-# ENCORE V6: real NSW concert discovery prototype
+# ENCORE — NSW live music discovery
 
-Website: https://goldrush645.github.io/GigSite/
+Live website: https://goldrush645.github.io/GigSite/
 
-## Current functionality
-- The live feed currently includes 85 concerts and two festivals, comprising 16 curated concert listings and 69 new concerts imported from Moshtix on 9 November 2026. Totals change with daily refreshes.
-- Real artists, venues, dates and official seller event links. The city selector, search, genre filtering, artist following, carousels and festival matching still work.
-- `data/events.json` is the public feed. `data/seed.json` is the curated fallback.
-- Following and reminder preferences are saved only in browser storage. No accounts or email alerts exist yet.
+ENCORE is a free-hosted prototype for discovering upcoming live music in Sydney, Wollongong and Newcastle, following artists and browsing festivals. It **links to official ticket sellers** but does not sell tickets.
 
-## Real-data refresh
-A once-daily GitHub Actions workflow (`.github/workflows/sync-events.yml`) calls `scripts/sync-events.mjs`, using Moshtix's documented anonymous GraphQL interface. It requests a limited number of sorted pages, maps supported Sydney/Wollongong/Newcastle localities, and merges matches with the verified baseline while deduplicating by Moshtix ID. The refreshed `data/events.json` is committed to the repository.
+## Live data sources
 
-**Status:** The live importer has been tested successfully in GitHub Actions. The API's chronological query initially returned events from 1999–2004; adding `includePastEvents: false` resolved that problem. The importer now checks that upcoming listings match our supported NSW locations. If the API returns no local matches or fails, the script exits without overwriting the existing feed. URLs are constructed with clean slugs and Moshtix event IDs.
+- **Moshtix**: public event feed imported by `scripts/sync-events.mjs`.
+- **Ticketmaster**: official Discovery API v2 imported by `scripts/sync-ticketmaster.mjs`.
+- Both feeds are merged into `data/events.json`, consumed by the static GitHub Pages frontend.
+- The initial combined import on 9 November 2026 produced **182 concerts and 2 festivals**: 86 concerts from Moshtix/curated listings and 96 from Ticketmaster. Counts will change with scheduled refreshes.
+- Event pages show the source provider and verified seller URL. When two sources confidently match by performer, venue, city and date, ENCORE keeps the first source and adds an alternative official link.
+- Ticketmaster presale/general sale dates appear where the API provides them.
 
-To run an extra refresh: GitHub → Actions → **Update official NSW concert listings** → **Run workflow** → `main`. Do not use **Re-run jobs** on an old run: it checks out the original commit rather than the latest code. Repository workflow permissions must allow `contents: write` for the automatic commit.
+## Setting up Ticketmaster (no keys in public files)
 
-Moshtix documentation and usage terms:
-- https://developer.moshtix.com/docs/our-api/
-- https://developer.moshtix.com/docs/queries/
-- https://developer.moshtix.com/terms/
+1. Create a developer app at https://developer.ticketmaster.com/.
+2. Find the app's **Consumer Key** (Discovery API key).
+3. In the GitHub repository: **Settings → Secrets and variables → Actions → New repository secret**.
+4. Set secret name **`TICKETMASTER_API_KEY`**, paste your Consumer Key in the secret value and save.
+5. Go to **Actions → Refresh NSW concert listings — Moshtix and Ticketmaster → Run workflow** on `main` to refresh immediately.
 
-Moshtix discourages excessive polling. This non-commercial prototype uses a conservative daily schedule; review licensing and contact Moshtix before expanding traffic or commercialising.
+**Never paste the key into `index.html`, commit it to Git, or share it in an issue.** The key is used by GitHub Actions only; the frontend reads a generated JSON file and makes no Ticketmaster API calls.
 
-## Accuracy and limitations
-- “Recently listed” is **not** an assertion that the artist just announced the show. When present, `detectedAt` means ENCORE first saw it, not its official announcement date.
-- Presale, ticket inventory, prices, sellouts, resale availability and notification delivery are **not currently verified or operational**.
-- Automated performer extraction and genre grouping are heuristics. Imported festivals may not have full lineups; check the original provider.
-- This is a static site hosted on GitHub Pages. It does not expose paid provider API keys; a future Ticketmaster integration should keep its credential in a server-side GitHub Actions secret or backend.
-- Data sources do not yet cover all Australian ticket sellers or smaller venues.
+## Automatic refresh
 
-Next steps: verify individual event accuracy and venue classifications, expand venue/locality coverage, and add a licensed Ticketmaster feed before building announcement alerts.
+The workflow `.github/workflows/sync-events.yml` runs each day, as well as when its importer scripts change. Its steps:
+
+1. Pull upcoming Moshtix listings.
+2. Run `node --test scripts/test-ticketmaster.mjs` (8 fixture tests).
+3. Query the Ticketmaster API around Sydney, Wollongong and Newcastle if the secret is configured.
+4. Merge and deduplicate events, preserving the first-detected timestamp where possible.
+5. Commit the refreshed JSON to `main`; GitHub Pages republishes the data.
+
+**Important:** Use **Run workflow** to pick up the latest code. GitHub's **Re-run jobs** on a historical run uses that run's original commit. A provider error fails the refresh rather than overwriting the published feed with an empty result. The static website continues serving the last committed data.
+
+## What is and isn't live
+
+**Live:** concert and festival listings, city/genre filters, searchable artist list, mobile carousels, verified event links, Ticketmaster sale dates (when available).
+
+**Prototype only:** following artists and saving reminders in browser-local storage (no accounts, cross-device sync or emails); resale searches and monitoring (not connected); automatic tour-announcement timestamps (not reliably available).
+
+**Data caveats:** Being newly imported into ENCORE does **not** mean a show was just announced. The first-detected timestamp is when our importer first saw the listing. Venue/performer matching and genres can be imperfect. Ticket availability, sale status and lineup may change; always verify on the official provider's event page.
+
+Ticketmaster Discovery API: https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/
+Moshtix API: https://developer.moshtix.com/docs/our-api/
+Moshtix terms: https://developer.moshtix.com/terms/
+
+Provider usage, attribution and commercial licensing requirements must be reviewed before broader launch. Default Ticketmaster Discovery API access is rate-limited; our current scheduled refresh keeps request volume low.
