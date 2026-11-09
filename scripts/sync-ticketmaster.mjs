@@ -3,6 +3,7 @@
 // See https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/
 import {readFile,writeFile} from 'node:fs/promises';
 import {inferArtistName} from './artist-names.mjs';
+import {choosePosterImage} from './provider-images.mjs';
 import {pathToFileURL} from 'node:url';
 
 const CENTERS=[
@@ -80,6 +81,8 @@ export function normalizeTicketmaster(raw,now=new Date().toISOString(),cityHint=
   const attractions=(raw?._embedded?.attractions||[]).filter(x=>x?.type==='attraction'&&x?.name);
   const artistName=inferArtistName(raw.name,{attraction:attractions[0]?.name});
   const name=artistName||clean(raw.name).slice(0,100);
+  const artistPhoto=choosePosterImage(attractions[0]?.images);
+  const eventPhoto=choosePosterImage(raw.images);
   const title=clean(raw.name).slice(0,180);
   const group=raw.classifications?.[0]||{};
   const rawGenre=group.subGenre?.name||group.genre?.name||'';
@@ -94,6 +97,8 @@ export function normalizeTicketmaster(raw,now=new Date().toISOString(),cityHint=
   const event={
     id:'tm-'+clean(raw.id),tmId:clean(raw.id),
     name,artistName,title,short:poster(name),tour:title,city,venue:clean(venue?.name)||'Venue TBA',
+    artistImage:artistPhoto?.url||null,eventImage:eventPhoto?.url||null,
+    artistImageCredit:artistPhoto?.attribution||null,eventImageCredit:eventPhoto?.attribution||null,
     date,time,genre:genreFor(rawGenre),stage,
     presale:localTime(presaleAt),sale:localTime(onSaleAt),
     presaleAt,onSaleAt,announced:null,detectedAt:now,
@@ -103,7 +108,8 @@ export function normalizeTicketmaster(raw,now=new Date().toISOString(),cityHint=
   if(isFestival(raw)){
     const lineup=attractions.map(a=>clean(a.name)).filter(n=>key(n)!==key(raw.name)).slice(0,100);
     return {id:event.id,tmId:event.tmId,name:title,short:poster(title),city,venue:event.venue,
-      date,date2:raw.dates?.end?.localDate||date,lineup,tag:'Official Ticketmaster listing',source:'Ticketmaster',url:raw.url,art:event.art,detectedAt:now,festival:true};
+      date,date2:raw.dates?.end?.localDate||date,lineup,tag:'Official Ticketmaster listing',source:'Ticketmaster',url:raw.url,art:event.art,
+      eventImage:eventPhoto?.url||null,eventImageCredit:eventPhoto?.attribution||null,detectedAt:now,festival:true};
   }
   return event;
 }
@@ -131,7 +137,9 @@ export function mergeTicketmaster(feed,imported,now=new Date().toISOString()){
     }
     const isSameProvider=existing.source==='Ticketmaster'||existing.tmId===fresh.tmId;
     if(isSameProvider){
-      Object.assign(existing,{...fresh,id:existing.id,detectedAt:existing.detectedAt||fresh.detectedAt});
+      Object.assign(existing,{...fresh,id:existing.id,detectedAt:existing.detectedAt||fresh.detectedAt,
+        artistImage:fresh.artistImage||existing.artistImage||null,eventImage:fresh.eventImage||existing.eventImage||null,
+        artistImageCredit:fresh.artistImageCredit||existing.artistImageCredit||null,eventImageCredit:fresh.eventImageCredit||existing.eventImageCredit||null});
       delete existing.festival;
       tally.updated++;
     }else{
@@ -144,6 +152,10 @@ export function mergeTicketmaster(feed,imported,now=new Date().toISOString()){
       existing.onSaleAt=existing.onSaleAt||fresh.onSaleAt||null;
       existing.presale=existing.presale||fresh.presale||null;
       existing.sale=existing.sale||fresh.sale||null;
+      existing.artistImage=existing.artistImage||fresh.artistImage||null;
+      existing.eventImage=existing.eventImage||fresh.eventImage||null;
+      existing.artistImageCredit=existing.artistImageCredit||fresh.artistImageCredit||null;
+      existing.eventImageCredit=existing.eventImageCredit||fresh.eventImageCredit||null;
       tally.matched++;
     }
   }
