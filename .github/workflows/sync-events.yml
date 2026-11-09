@@ -23,5 +23,8 @@ jobs:
           git add data/events.json
           if ! git diff --cached --quiet; then
             git commit -m "Refresh ENCORE official NSW event feed"
-            git push
+            # Avoid rejecting updates made while the API job was running.
+            # Never force-push or overwrite newer work.
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
