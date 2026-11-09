@@ -10,6 +10,9 @@ on:
       - 'scripts/test-ticketmaster.mjs'
       - 'scripts/artist-names.mjs'
       - 'scripts/test-artists.mjs'
+      - 'scripts/provider-images.mjs'
+      - 'scripts/test-provider-images.mjs'
+      - 'index.html'
   schedule:
     - cron: '17 20 * * *' # once a day, 07:17 AEDT in summer
 concurrency:
@@ -35,7 +38,7 @@ jobs:
       - name: Fetch Moshtix public event records
         run: node scripts/sync-events.mjs
       - name: Check Ticketmaster importer fixtures
-        run: node --test scripts/test-ticketmaster.mjs scripts/test-artists.mjs
+        run: node --test scripts/test-ticketmaster.mjs scripts/test-artists.mjs scripts/test-provider-images.mjs
       - name: Fetch Ticketmaster events when API key is configured
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
