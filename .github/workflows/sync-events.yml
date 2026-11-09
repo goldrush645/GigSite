@@ -26,6 +26,12 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+      - name: Start from current main
+        # Push-triggered jobs may check out a commit that is already stale.
+        # Refresh before importing so old feed revisions cannot rebase over new ones.
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
       - name: Fetch Moshtix public event records
         run: node scripts/sync-events.mjs
       - name: Check Ticketmaster importer fixtures
@@ -43,6 +49,10 @@ jobs:
             git commit -m "Refresh ENCORE official NSW event feed (Moshtix + Ticketmaster)"
             # Avoid rejecting updates made while the API job was running.
             # Never force-push or overwrite newer work.
-            git pull --rebase origin main
+            if ! git pull --rebase origin main; then
+              git rebase --abort || true
+              echo "::error::Concurrent event-feed update detected. No stale feed was published."
+              exit 1
+            fi
             git push origin HEAD:main
           fi
