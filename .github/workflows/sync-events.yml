@@ -1,6 +1,11 @@
 name: Update official NSW concert listings
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-events.yml'
+      - 'scripts/sync-events.mjs'
   schedule:
     - cron: '17 20 * * *' # once a day, 07:17 AEDT in summer
 permissions:
