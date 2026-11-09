@@ -127,6 +127,8 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:130;op
 @media(max-width:570px){.search-combo{flex:1;width:auto;min-width:0}.search-combo>.search{max-width:none}.search-suggestions{left:0;right:auto;width:calc(100vw - 32px);max-height:55dvh}.search input{font-size:12px}.festival-follow-card{flex-wrap:wrap}.festival-follow-card .artist-copy{min-width:100px}}
 
 /* ENCORE POSTER PHOTOS V8 */
+.carousel-track>.event-card .event-art.has-poster-photo:after{content:"ENCORE // LIVE";transform:rotate(90deg);font-size:9px;letter-spacing:3px;bottom:auto;top:91px;right:-26px}
+
 .poster-photo{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:center 38%;z-index:0;filter:contrast(1.1) saturate(.85) brightness(.92);transition:transform .45s cubic-bezier(.2,.75,.2,1),filter .3s ease;pointer-events:none}
 .poster-photo-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(14,13,31,.40) 0%,rgba(24,16,39,.07) 27%,rgba(24,13,33,.23) 51%,rgba(14,10,29,.92) 100%),linear-gradient(125deg,rgba(255,112,86,.28),rgba(88,67,212,.2) 67%,rgba(14,18,35,.04))}
 .has-poster-photo{background:#423c61}
@@ -273,7 +275,7 @@ function photoForArtist(name){return name?artistImageIndex.get(normSearch(name))
 function photoForEvent(e){const first=verifiedPhotoUrl(e.artistImage);if(first)return{url:first,credit:e.artistImageCredit||null};const shared=photoForArtist(artistForEvent(e));if(shared)return shared;const fallback=verifiedPhotoUrl(e.eventImage);return fallback?{url:fallback,credit:e.eventImageCredit||null}:null}
 function photoForFestival(f){const url=verifiedPhotoUrl(f.eventImage);return url?{url,credit:f.eventImageCredit||null}:null}
 function posterPhotoMarkup(photo){return photo?'<img class="poster-photo" src="'+escapeHtml(photo.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="poster-photo-scrim" aria-hidden="true"></span>':''}
-function thumbPhotoMarkup(photo,label){return photo?'<img src="'+escapeHtml(photo.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':escapeHtml(label||'?')}
+function thumbPhotoMarkup(photo,label){return photo?'<img data-fallback="'+escapeHtml(label||'?')+'" src="'+escapeHtml(photo.url)+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':escapeHtml(label||'?')}
 function artistThumbMarkup(name,i){const p=photoForArtist(name),styles=['art-a','art-b','art-c','art-d','art-e','art-f','art-g','art-h'];return '<span class="artist-avatar '+(p?'poster-thumb':styles[i%8])+'">'+thumbPhotoMarkup(p,name.split(' ').map(x=>x[0]).slice(0,2).join(''))+'</span>'}
 function festivalThumbMarkup(f){const p=photoForFestival(f);return '<span class="artist-avatar '+(p?'poster-thumb':(f.art||'art-a'))+'">'+thumbPhotoMarkup(p,'F')+'</span>'}
 function suggestionRowMarkup(item,i){const p=suggestionPhoto(item);return '<button type="button" role="option" aria-selected="false" id="suggest-'+i+'" class="suggest-item" data-suggest="'+escapeHtml(item.type)+'" data-suggest-id="'+escapeHtml(item.id)+'"><span class="suggest-art">'+thumbPhotoMarkup(p,(item.name||'?')[0].toUpperCase())+'</span><span class="suggest-copy"><span class="suggest-name">'+escapeHtml(item.name)+'</span><span class="suggest-meta">'+escapeHtml(item.meta)+'</span></span></button>'}
@@ -331,6 +333,18 @@ async function loadVerifiedEvents(){
   render();
  }catch(err){dataStatus='Could not load the event feed. Refresh to retry; no fictional data is being shown.';render();console.error('ENCORE feed error:',err)}
 }
+document.addEventListener('error',e=>{
+ const img=e.target;
+ if(!img||img.tagName!=='IMG')return;
+ if(img.classList.contains('poster-photo')){
+   const parent=img.parentElement;
+   img.remove();
+   parent?.classList.remove('has-poster-photo');
+   parent?.querySelector('.poster-photo-scrim')?.remove();
+ }else if(img.hasAttribute('data-fallback')){
+   img.replaceWith(document.createTextNode(img.getAttribute('data-fallback')||'?'));
+ }
+},true);
 loadVerifiedEvents();
 })();
 </script>
