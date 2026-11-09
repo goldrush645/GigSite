@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T02:17:16.826Z",
+  "updatedAt": "2026-11-09T02:20:00.499Z",
   "source": "Official concert providers",
   "updateStatus": "provider",
   "events": [
@@ -242,9 +242,9 @@
     },
     {
       "id": "moshtix-201512",
-      "name": "Charles Carnabuci",
+      "name": "Charles Carnabuci - Babyteeth",
       "title": "Charles Carnabuci - Babyteeth Album Launch",
-      "short": "CHARLES CARNABUCI",
+      "short": "CHARLES CARNABUCI\n- BABYTEETH",
       "tour": "Charles Carnabuci - Babyteeth Album Launch",
       "city": "Sydney",
       "venue": "Oxford Art Factory, Main Room",
@@ -259,7 +259,7 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/charles-carnabuci-babyteeth-album-launch/201512",
       "art": "art-a",
-      "artistName": "Charles Carnabuci"
+      "artistName": "Charles Carnabuci - Babyteeth"
     },
     {
       "id": "moshtix-201744",
@@ -347,9 +347,9 @@
     },
     {
       "id": "moshtix-197300",
-      "name": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour",
+      "name": "Ecca Vandal",
       "title": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour | SECOND SHOW ADDED",
-      "short": "ECCA VANDAL ‘LOOKING FOR PEOPLE\nTO UNFOLLOW’ ALBUM TOUR",
+      "short": "ECCA VANDAL",
       "tour": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour | SECOND SHOW ADDED",
       "city": "Sydney",
       "venue": "Oxford Art Factory, Main Room",
@@ -364,7 +364,7 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/ecca-vandal-looking-for-people-to-unfollow-album-tour-second-show-added/197300",
       "art": "art-e",
-      "artistName": "Ecca Vandal ‘Looking For People to Unfollow’ Album Tour"
+      "artistName": "Ecca Vandal"
     },
     {
       "id": "moshtix-198056",
@@ -431,9 +431,9 @@
     },
     {
       "id": "moshtix-201008",
-      "name": "Steel Assassins warm up show w/RAWTISM",
+      "name": "Steel Assassins",
       "title": "Steel Assassins warm up show w/RAWTISM + PESTILENT DOOM + HEATHENSPAWN + SHATTERFACE",
-      "short": "STEEL ASSASSINS WARM\nUP SHOW W/RAWTISM",
+      "short": "STEEL ASSASSINS",
       "tour": "Official Steel Assassins 2026 warm up show.",
       "city": "Sydney",
       "venue": "MoshPit Bar",
@@ -448,7 +448,7 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/steel-assassins-warm-up-show-w-rawtism-pestilent-doom-heathenspawn-shatterface/201008",
       "art": "art-a",
-      "artistName": "Steel Assassins warm up show w/RAWTISM"
+      "artistName": "Steel Assassins"
     },
     {
       "id": "moshtix-198181",
@@ -872,9 +872,9 @@
     },
     {
       "id": "moshtix-201400",
-      "name": "Telopia",
+      "name": "Telopia - Rocks",
       "title": "Telopia - Rocks + TooProud Double Single Launch [FREE ENTRY]",
-      "short": "TELOPIA",
+      "short": "TELOPIA -\nROCKS",
       "tour": "Telopia - Rocks + TooProud Double Single Launch [FREE ENTRY]",
       "city": "Sydney",
       "venue": "Oxford Art Factory, Gallery Bar",
@@ -889,7 +889,7 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/telopia-rocks-tooproud-double-single-launch-free-entry/201400",
       "art": "art-a",
-      "artistName": "Telopia"
+      "artistName": "Telopia - Rocks"
     },
     {
       "id": "moshtix-201519",
@@ -1277,9 +1277,9 @@
     },
     {
       "id": "moshtix-201401",
-      "name": "LAPIS",
+      "name": "LAPIS - SPOTS AND STRIPES",
       "title": "LAPIS - SPOTS AND STRIPES SINGLE LAUNCH FT. LEO ABISAAB [FREE ENTRY]",
-      "short": "LAPIS",
+      "short": "LAPIS - SPOTS\nAND STRIPES",
       "tour": "LAPIS - SPOTS AND STRIPES SINGLE LAUNCH FT. LEO ABISAAB [FREE ENTRY]",
       "city": "Sydney",
       "venue": "Oxford Art Factory, Gallery Bar",
@@ -1294,7 +1294,7 @@
       "source": "Moshtix",
       "url": "https://www.moshtix.com.au/v2/event/lapis-spots-and-stripes-single-launch-ft-leo-abisaab-free-entry/201401",
       "art": "art-b",
-      "artistName": "LAPIS"
+      "artistName": "LAPIS - SPOTS AND STRIPES"
     },
     {
       "id": "moshtix-197770",
@@ -4166,5 +4166,5 @@
     "Moshtix",
     "Ticketmaster"
   ],
-  "ticketmasterUpdatedAt": "2026-11-09T02:17:16.826Z"
+  "ticketmasterUpdatedAt": "2026-11-09T02:20:00.499Z"
 }
