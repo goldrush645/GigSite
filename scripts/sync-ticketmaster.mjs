@@ -2,6 +2,7 @@
 // Uses TICKETMASTER_API_KEY only on the GitHub Actions runner, never in client JS.
 // See https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/
 import {readFile,writeFile} from 'node:fs/promises';
+import {inferArtistName} from './artist-names.mjs';
 import {pathToFileURL} from 'node:url';
 
 const CENTERS=[
@@ -77,7 +78,8 @@ export function normalizeTicketmaster(raw,now=new Date().toISOString(),cityHint=
   const date=raw?.dates?.start?.localDate;
   if(!city||!/^\d{4}-\d{2}-\d{2}$/.test(date||'')||date<todaySydney())return null;
   const attractions=(raw?._embedded?.attractions||[]).filter(x=>x?.type==='attraction'&&x?.name);
-  const name=clean(attractions[0]?.name||raw.name).slice(0,100);
+  const artistName=inferArtistName(raw.name,{attraction:attractions[0]?.name});
+  const name=artistName||clean(raw.name).slice(0,100);
   const title=clean(raw.name).slice(0,180);
   const group=raw.classifications?.[0]||{};
   const rawGenre=group.subGenre?.name||group.genre?.name||'';
@@ -91,7 +93,7 @@ export function normalizeTicketmaster(raw,now=new Date().toISOString(),cityHint=
   const time=raw.dates?.start?.noSpecificTime||raw.dates?.start?.timeTBA||!t?'Time TBA':new Date('2000-01-01T'+t).toLocaleTimeString('en-AU',{hour:'numeric',minute:'2-digit',hour12:true});
   const event={
     id:'tm-'+clean(raw.id),tmId:clean(raw.id),
-    name,title,short:poster(name),tour:title,city,venue:clean(venue?.name)||'Venue TBA',
+    name,artistName,title,short:poster(name),tour:title,city,venue:clean(venue?.name)||'Venue TBA',
     date,time,genre:genreFor(rawGenre),stage,
     presale:localTime(presaleAt),sale:localTime(onSaleAt),
     presaleAt,onSaleAt,announced:null,detectedAt:now,
