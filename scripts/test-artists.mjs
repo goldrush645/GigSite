@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import {inferArtistName} from './artist-names.mjs';
 const cases=[
 ['Ecca Vandal ‘Looking For People to Unfollow’ Album Tour','Ecca Vandal'],
+['Ecca Vandal ‘Looking For People to Unfollow’ Album Tour | SECOND SHOW ADDED','Ecca Vandal'],
+['Steel Assassins warm up show w/RAWTISM + PESTILENT DOOM','Steel Assassins'],
 ['Katchafire 2026 Aus Tour w/ Mike Love','Katchafire'],
 ['THE TULLAMARINES 2026 TOUR','THE TULLAMARINES'],
 ['Congette + The Low Dogs + The Money','Congette'],
