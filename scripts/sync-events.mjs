@@ -26,7 +26,7 @@ function localDateTime(utc){
   return {date:[p.year,p.month,p.day].join('-'),time:p.hour+':'+p.minute+' '+p.dayPeriod.toUpperCase()};
 }
 function slug(s){
-  return clean(s).toLowerCase().replace(/([^0-9 a-zA-Z-\u4e00-\u9eff])+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+  return clean(s).toLowerCase().replace(/[^0-9a-z\u4e00-\u9eff]+/g,'-').replace(/^-|-$/g,'');
 }
 function artistTitle(s){
   return clean(s.split(/\s[|–—]\s|\s-\s|\s+w\/\s|\s+feat(?:uring)?\.?\s/i)[0]).slice(0,90);
